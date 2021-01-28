@@ -1,0 +1,42 @@
+Entities für die Applikation in Pseudo Code
+KlassenName {
+    PropertyName DataType;
+}
+
+Product {
+    Id int;
+    Parts Part[];
+    Round Round;
+    Station Station;
+    Start DateTime;
+    End DateTime;
+}
+
+Parts {
+    PartDefinition PartDefinition;
+    Product Product;
+}
+
+PartDefinition {
+    Cost int;
+    Name string;
+}
+
+Station {
+    AssemblySteps AssemblyStep[];
+    Round Round;
+    Products Product[];
+
+}
+
+AssemblyStep {
+    Stations Station[];
+    Cost int;
+    Name string;Æ
+}
+
+Round {
+    Id int;
+    Start DateTime;
+    End DateTime;
+}
